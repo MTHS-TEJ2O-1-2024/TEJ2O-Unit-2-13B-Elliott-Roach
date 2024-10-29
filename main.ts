@@ -21,6 +21,8 @@ basic.showIcon(IconNames.Happy)
 //light up how many neopixles are equal to numberCountDown
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
+    numberCountDown = 4
+
     while (numberCountDown > 0) {
         
         //seting how many light up
@@ -31,6 +33,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.show()
+        pause(700)
 
         if (numberCountDown = 3)
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -39,6 +42,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.show()
+        pause(700)
 
         if (numberCountDown = 2)
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -47,6 +51,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.show()
+        pause(700)
 
         if (numberCountDown = 1)
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -55,6 +60,7 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.show()
+        pause(700)
 
         if (numberCountDown = 0)
             neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -63,9 +69,10 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixleStrip.show()
+        pause(700)
 
         //subtract one from numberCountDown
         numberCountDown = numberCountDown - 1
-        basic.showNumber(numberCountDown)
     }
+    basic.showIcon(IconNames.Happy)
 })
