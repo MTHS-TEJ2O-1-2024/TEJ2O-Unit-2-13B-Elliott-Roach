@@ -25,65 +25,63 @@ input.onButtonPressed(Button.A, function () {
 
     while (numberCountDown > 0) {
         
+        
+        basic.forever(function() {
+            basic.showNumber(numberCountDown)
+            neopixleStrip.show()
+        })
+
         //seting how many light up
 
         //numberCountDown = 4
-        if (numberCountDown = 4 )
-        neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.show()
-        basic.showNumber(numberCountDown)
-        pause(700)
+        if (numberCountDown = 4 ) {
+            neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
+            pause(700)
+        }
 
         //numberCountDown = 3
-        if (numberCountDown = 3)
-        neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.show()
-        basic.showNumber(numberCountDown)
-        pause(700)
+        if (numberCountDown = 3) {
+            neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            pause(700)
+        }
 
         //numberCountDown = 2
-        if (numberCountDown = 2)
-        neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.show()
-        basic.showNumber(numberCountDown)
-        pause(700)
+        if (numberCountDown = 2) {
+            neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            pause(700)
+        }
 
         //numberCountDown = 1
-        if (numberCountDown = 1)
-        neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
-        neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.show()
-        basic.showNumber(numberCountDown)
-        pause(700)
-
+        if (numberCountDown = 1) {
+            neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+            neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            pause(700)
+        }
+        
         //numberCountDown = 0
-        if (numberCountDown = 0)
-        neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-        neopixleStrip.show()
-        basic.showNumber(numberCountDown)
-        pause(700)
+        if (numberCountDown <= 0) {
+            neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+            neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            pause(700)
+        }
+
 
         //subtract one from numberCountDown
         numberCountDown = numberCountDown - 1
     }
+    numberCountDown = 0
     basic.showIcon(IconNames.Happy)
 })
