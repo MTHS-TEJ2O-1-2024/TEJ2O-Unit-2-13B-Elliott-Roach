@@ -2,7 +2,7 @@
  *
  * Created by: Elliott Roach
  * Created on: oct 2024
- * This program lights up the same amont of neopixles as the number of numberCountDown
+ * This program lights up the same amount of neopixels as the number of numberCountDown
 */
 
 let numberCountDown:number = 4
