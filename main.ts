@@ -67,6 +67,7 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         }
 
+        //showing
         neopixleStrip.show()
         basic.showNumber(numberCountDown)
         pause(700)
