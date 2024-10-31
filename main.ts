@@ -33,9 +33,6 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Blue))
-            neopixleStrip.show()
-            basic.showNumber(numberCountDown)
-            pause(700)
         }
 
         //numberCountDown = 3
@@ -44,9 +41,6 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixleStrip.show()
-            basic.showNumber(numberCountDown)
-            pause(700)
         }
 
         //numberCountDown = 2
@@ -55,9 +49,6 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixleStrip.show()
-            basic.showNumber(numberCountDown)
-            pause(700)
         }
 
         //numberCountDown = 1
@@ -66,9 +57,6 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixleStrip.show()
-            basic.showNumber(numberCountDown)
-            pause(700)
         }
 
         //numberCountDown = 0
@@ -77,10 +65,11 @@ input.onButtonPressed(Button.A, function () {
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixleStrip.show()
-            basic.showNumber(numberCountDown)
-            pause(700)
         }
+
+        neopixleStrip.show()
+        basic.showNumber(numberCountDown)
+        pause(700)
 
         //subtract one from numberCountDown
         numberCountDown = numberCountDown - 1
