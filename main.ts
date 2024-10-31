@@ -23,12 +23,12 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     numberCountDown = 4
 
-    while (numberCountDown > 0) {
+    while (numberCountDown >= 0) {
         
         //seting how many light up
 
         //numberCountDown = 4
-        if (numberCountDown = 4 ) {
+        if (numberCountDown == 4 ) {
             neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
         }
 
         //numberCountDown = 3
-        if (numberCountDown = 3) {
+        if (numberCountDown == 3) {
             neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
@@ -50,7 +50,7 @@ input.onButtonPressed(Button.A, function () {
         }
 
         //numberCountDown = 2
-        if (numberCountDown = 2) {
+        if (numberCountDown == 2) {
             neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -61,7 +61,7 @@ input.onButtonPressed(Button.A, function () {
         }
 
         //numberCountDown = 1
-        if (numberCountDown = 1) {
+        if (numberCountDown == 1) {
             neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -72,7 +72,7 @@ input.onButtonPressed(Button.A, function () {
         }
 
         //numberCountDown = 0
-        if (numberCountDown = 0) {
+        if (numberCountDown == 0) {
             neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
